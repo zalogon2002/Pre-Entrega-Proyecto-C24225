@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+ 
+  
+}
+
+:root {
+  font-size: 24px;
+  
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+ 
+}
+
+main {
+  margin: auto;
+  width: 85%;
+  height:fit-content;
+  background-color: rgb(255, 255, 255);
+
+}
+
+header {
+  background-color: rgb(138, 43, 226);
+  /*display: flex;
+  flex-direction: row;
+  margin: auto;
+  height: 120px;*/
+  
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__menu{
+  font-size: 0.75rem;
+  display: flex;
+  list-style: none;
+  
+}
+
+.navbar__logo{
+  width: 75%;
+}
+
+.navbar__item{
+  color: blanchedalmond;
+}
+
+.navbar__link{
+  color: blanchedalmond;
+  list-style: none;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.navbar__link:hover{
+  color: rgb(60, 60, 60);
+}
+
+/*Footer*/
+
+.navbar__footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__footer__menu{
+  list-style: none;
+  font-size: 0.75rem;
+}
+
+.footer__copy{
+  text-align: center;
+  font-size: 0.70rem;
+  margin-top: 0.25rem;
+}
+
+
+
+
+
+
+/*.menu {
+    margin: auto;
+    width: 80%;
+    height: 120px;
+    background-color: blueviolet;
+       
+
+}*/
+
+/*.menu nav{
+  display: inline;
+}*/
+
+/*.menu img {
+  width: 25%;
+  align-items: center;
+}*/
+
+.productos {
+  margin: auto;
+  width: 80%;
+}
+
+.somos {
+  margin: auto;
+  width: 80%;
+}
+
+.formulario {
+  margin: auto;
+  width: 80%;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+
+h1 {
+  font-size: 1rem;
+}
+
+h2 {
+  font-size: 0.5rem;
+}
+
+p {
+  font-size: 0.75rem;
+}
+
+/*nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+nav a img {
+  display: inline
+  width: 80%;
+  align-items: center;
+}
+
+nav ul {
+  text-align:right;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+  font-size: 0.75rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+*/
+table {
+  width: 80%;
+  background-color: blanchedalmond;
+  border-radius: 10px;
+}
+
+th,td {
+  text-align: left;
+}
+
+footer {
+  margin: auto;
+  height: fit-content;
+  background-color: rgb(99, 98, 98);
+  color: antiquewhite;
+  
+}
+
+.navbar__footer{
+  display: flex;
+
+}
+
+.navbar__footer__item{
+  text-align: left;
+}
+
+
+
+/* TIPOGRAFÍAS */
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
