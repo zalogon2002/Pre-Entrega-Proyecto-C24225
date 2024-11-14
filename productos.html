@@ -3,76 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <title>Productos</title>
 </head>
 <body>
-          <header>
-            <nav class="navbar container">
-                <picture>
-                    <a href="./index.html">
-                        <img class="navbar__logo" src="img/logo-running-menu-copia.png" alt="logo-running-com">
-                    </a>
-                </picture>                
-                <ul class="navbar__menu">
-                    <li class="navbar__item"><a class="poppins-black navbar__link" href="index.html">Inicio</a></li>
-                    <li class="navbar__item"><a class="poppins-black navbar__link" href="somos.html">Somos</a></li>
-                    <li class="navbar__item"><a class="poppins-black navbar__link" href="productos.html">Productos</a></li>
-                    <li class="navbar__item"><a class="poppins-black navbar__link" href="contacto.html">Contacto</a></li>
-                    <li class="navbar__item"><a class="poppins-black navbar__link" href="carrito.html">Carrito</a><i class="fa-solid fa-cart-shopping"></i></li>
-                </ul>
-            </nav>
-               
-        </header>
+    <header>
+        <nav class="navbar container">
+            <picture>
+                <a href="./index.html">
+                    <img class="navbar__logo" src="img/logo-running-menu-copia.png" alt="logo-running-com">
+                </a>
+            </picture>                
+            <ul class="navbar__menu">
+                <li class="navbar__item"><a class="poppins-black navbar__link" href="index.html">Inicio</a></li>
+                <li class="navbar__item"><a class="poppins-black navbar__link" href="productos.html">Productos</a></li>
+                <li class="navbar__item"><a class="poppins-black navbar__link" href="contacto.html">Contacto</a></li>
+                <li class="navbar__item"><a class="poppins-black navbar__link" href="carrito.html">Carrito<i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+           
+    </header>
     <main>
-        <h1>PRODUCTOS 🎁</h1>
-            <div class="productos">
-                <section>
-                    <h2>Encontrá los mejores mates del mercado.</h2>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>ID</th>
-                                    <th>Producto</th>
-                                    <th>Precio</th>
-                                    <th>Acción</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Mate Calabaza</td>
-                                    <td>$35000</td>
-                                    <td><button>Comprar</button></td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Mate Vidrio</td>
-                                    <td>$15000</td>
-                                    <td><button>Comprar</button></td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Mate Plástico</td>
-                                    <td>$5000</td>
-                                    <td><button>Comprar</button></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                </section>
-            </div>
+        <h2 class="productos_titulo container poppins-black">Nuestros Productos</h2>
+            <section class="productos container">
+                <div class="productos_card">
+                    <picture class="productos_card_foto">
+                        <img src="img/L41759600_0.webp" alt="Zapatillas Running Pro">
+                    </picture>
+                    <h3 class="poppins-bold">Producto 1</h3>
+                    <p class="poppins-regular">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti eaque sapiente possimus sed voluptates consectetur.</p>
+                    <a href="carrito.html" class="productos_card_boton poppins-bold">Comprar</a>
+                    
+                </div>
+                <div class="productos_card">
+                    <picture class="productos_card_foto">
+                        <img src="img/L47211200_0.webp" alt="Zapatillas Running Pro 2">
+                    </picture>
+                    <h3 class="poppins-bold">Producto 2</h3>
+                    <p class="poppins-regular">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti eaque sapiente possimus sed voluptates consectetur.</p>
+                    <a href="carrito.html" class="productos_card_boton poppins-bold">Comprar</a>
+                    
+                </div>
+                <div class="productos_card">
+                    <picture class="productos_card_foto">
+                        <img src="img/L47426600_0.webp" alt="Zapatillas Running Pro 3">
+                    </picture>
+                    <h3 class="poppins-bold">Producto 3</h3>
+                    <p class="poppins-regular">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti eaque sapiente possimus sed voluptates consectetur.</p>
+                    <a href="carrito.html" class="productos_card_boton poppins-bold">Comprar</a>
+                    
+                </div>
+                <div class="productos_card">
+                    <picture class="productos_card_foto">
+                        <img src="img/LC1705900_0_GHO_cross5short_aoprovencenauticalblue_run_w-1200x1200_8a025f1f-0857-42f5-aebb-38e2b04cdb3b.webp" alt="Zapatillas Running Pro 4">
+                    </picture>
+                    <h3 class="poppins-bold">Producto 4</h3>
+                    <p class="poppins-regular">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti eaque sapiente possimus sed voluptates consectetur.</p>
+                    <a href="carrito.html" class="productos_card_boton poppins-bold">Comprar</a>
+                    
+                </div>
+                <div class="productos_card">
+                    <picture class="productos_card_foto">
+                        <img src="img/LC2057100_0_GHO_exploreseamlesshz_burntochre_hike_m-1200x1200_b98a0de0-12d9-4442-ae77-1d0ce6ed6ca8.webp" alt="Zapatillas Running Pro">
+                    </picture>
+                    <h3 class="poppins-bold">Producto 5</h3>
+                    <p class="poppins-regular">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti eaque sapiente possimus sed voluptates consectetur.</p>
+                    <a href="carrito.html" class="productos_card_boton poppins-bold">Comprar</a>
+                    
+                </div>
+                <div class="productos_card">
+                    <picture class="productos_card_foto">
+                        <img src="img/Remerashombre_4_54677284-6e0f-4396-a3f6-2ac1025762d8.webp" alt="Zapatillas Running Pro">
+                    </picture>
+                    <h3 class="poppins-bold">Producto 6</h3>
+                    <p class="poppins-regular">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti eaque sapiente possimus sed voluptates consectetur.</p>
+                    <a href="carrito.html" class="productos_card_boton poppins-bold">Comprar</a>
+                    
+                </div>
+            </section>
     </main>
     <footer class="footer">
         <nav class="navbar__footer container">
             <ul class="navbar__footer__menu">
-                <li class="navbar__footer__item"><a class="poppins-black navbar__link" href="indexhtml">Inicio</a></li>
-                <li class="navbar__footer__item"><a class="poppins-black navbar__link" href="somos.html">Somos</a></li>
-                <li class="navbar__footer__item"><a class="poppins-black navbar__link" href="productos.html">Productos<a></li>
-                <li class="navbar__footer__item"><a class="poppins-black navbar__link" href="contacto.html">Contacto</a><li>
-                <li class="navbar__footer__item"><a class="poppins-black navbar__link" href="carrito.html">Carrito</a><li>
+                <li class="navbar__footer__item"><a class="poppins-regular navbar__link" href="index.html">Inicio</a></li>
+                <li class="navbar__footer__item"><a class="poppins-regular navbar__link" href="productos.html">Productos<a></li>
+                <li class="navbar__footer__item"><a class="poppins-regular navbar__link" href="contacto.html">Contacto</a><li>
+                <li class="navbar__footer__item"><a class="poppins-regular navbar__link" href="carrito.html">Carrito</a><li>
             </ul>
             <picture class="navbar__footer__logo">
                 <a href="index.html">
@@ -80,7 +99,7 @@
                 </a>
             </picture>
         </nav>    
-        <p class="footer__copy">Todos los derechos reservados - Proyecto Running 2024 (c) Gonzalo Vera</p>
+        <p class="footer__copy poppins-regular">Todos los derechos reservados - Proyecto Running 2024 (c) Gonzalo Vera</p>
                         
     </footer>
 

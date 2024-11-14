@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <title>Contacto</title>
 </head>
 <body>
@@ -19,45 +19,47 @@
             </picture>                
             <ul class="navbar__menu">
                 <li class="navbar__item"><a class="poppins-black navbar__link" href="index.html">Inicio</a></li>
-                <li class="navbar__item"><a class="poppins-black navbar__link" href="somos.html">Somos</a></li>
                 <li class="navbar__item"><a class="poppins-black navbar__link" href="productos.html">Productos</a></li>
                 <li class="navbar__item"><a class="poppins-black navbar__link" href="contacto.html">Contacto</a></li>
-                <li class="navbar__item"><a class="poppins-black navbar__link" href="carrito.html">Carrito</a><i class="fa-solid fa-cart-shopping"></i></li>
+                <li class="navbar__item"><a class="poppins-black navbar__link" href="carrito.html">Carrito<i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </nav>
            
     </header>
     <main>
-        <div class="formulario">
-            <h1>CONTACTO</h1>
+        <section class="formulario container">
+            <div class="formulario_texto">
+                <h2 class="poppins-black">HACENOS TU CONSULTA</h2>
+            </div>
+            <div class="formulario_info">
                 <form action="https://formspree.io/f/xzzbeaeo" method="POST">
                     <!-- INGRESO DE DATOS AL FORMULARIO -->
                      <label for="nombre">Nombre:</label>
-                     <input type="text" placeholder="Esribí tu nombre" required maxlength="50" minlength="5"    id="nombre"    name="nombre">
+                     <input type="text" placeholder="Esribí tu nombre"  requiredmaxlength="50" minlength="5"    id="nombre"    name="nombre">
                      <br>
                      <label for="mail">Email:</label>
-                     <input type="email" placeholder="Esribí tu Email" required maxlength="70" minlength="10"   id="mail"     name="mail">
+                     <input type="email" placeholder="Esribí tu Email"  requiredmaxlength="70" minlength="10"   id="mail"     name="mail">
                      <br>
                      <label for="telefono">Teléfono:</label>
-                     <input type="tel" placeholder="Ingresá tu celular" required maxlength="15" minlength="10"      id="telefono" name="telefono">
+                     <input type="tel" placeholder="Ingresá tu celular"     requiredmaxlength="15" minlength="10"      id="telefono"    name="telefono">
                      <br>
                      <label for="mensaje">Comentario:</label><br>
-                     <textarea name="mensaje" id="mensaje" rows="6" cols="60" placeholder="Dejanos tu mensaje">
+                     <textarea name="mensaje" id="mensaje" rows="6"     cols="60"placeholder="Dejanos tu mensaje">
                      </textarea>
                      <br>
-                     <input type="submit">
+                     <input class="boton_enviar" type="submit">
                 </form>
-        </div>
+            </div>
+        </section>
            
     </main>
     <footer class="footer">
         <nav class="navbar__footer container">
             <ul class="navbar__footer__menu">
-                <li class="navbar__footer__item"><a class="poppins-black navbar__link" href="indexhtml">Inicio</a></li>
-                <li class="navbar__footer__item"><a class="poppins-black navbar__link" href="somos.html">Somos</a></li>
-                <li class="navbar__footer__item"><a class="poppins-black navbar__link" href="productos.html">Productos<a></li>
-                <li class="navbar__footer__item"><a class="poppins-black navbar__link" href="contacto.html">Contacto</a><li>
-                <li class="navbar__footer__item"><a class="poppins-black navbar__link" href="carrito.html">Carrito</a><li>
+                <li class="navbar__footer__item"><a class="poppins-regular navbar__link" href="index.html">Inicio</a></li>
+                <li class="navbar__footer__item"><a class="poppins-regular navbar__link" href="productos.html">Productos<a></li>
+                <li class="navbar__footer__item"><a class="poppins-regular navbar__link" href="contacto.html">Contacto</a><li>
+                <li class="navbar__footer__item"><a class="poppins-regular navbar__link" href="carrito.html">Carrito</a><li>
             </ul>
             <picture class="navbar__footer__logo">
                 <a href="index.html">
@@ -65,7 +67,7 @@
                 </a>
             </picture>
         </nav>    
-        <p class="footer__copy">Todos los derechos reservados - Proyecto Running 2024 (c) Gonzalo Vera</p>
+        <p class="footer__copy poppins-regular">Todos los derechos reservados - Proyecto Running 2024 (c) Gonzalo Vera</p>
                         
     </footer>
 

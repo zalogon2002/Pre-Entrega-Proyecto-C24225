@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
  
   
 }
@@ -13,13 +14,22 @@
 .container{
   max-width: 1200px;
   margin: 0 auto;
+
  
+}
+
+body {
+  /*display: flex;
+  flex-direction: column;*/
+  min-height: 100vh;
+  /*font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;*/
+  background-color: rgb(255, 255, 255);
 }
 
 main {
   margin: auto;
-  width: 85%;
-  height:fit-content;
+  width: 80%;
+  /*height:fit-content;*/
   background-color: rgb(255, 255, 255);
 
 }
@@ -33,21 +43,46 @@ header {
   
 }
 
+footer {
+  margin: auto;
+  height: fit-content;
+  background-color: rgb(99, 98, 98);
+  color: antiquewhite;
+  
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+ font-size: 20px;
+}
+
+p {
+  font-size: 14px;
+}
+/*Estilos Header*/
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .navbar__menu{
   font-size: 0.75rem;
   display: flex;
   list-style: none;
-  
+  align-items: center;
 }
 
 .navbar__logo{
-  width: 75%;
+  max-width: 300px;
 }
 
 .navbar__item{
@@ -65,7 +100,159 @@ header {
   color: rgb(60, 60, 60);
 }
 
-/*Footer*/
+.fa-solid {
+  margin: 0 5px;
+}
+
+
+/*Estilos Index*/
+
+.proyecto{
+  background-image: url(/img/cuantos_dias_por_semana_debo_correr.png);
+  padding: 120px 0;
+  background-size: cover;
+}
+
+
+.proyecto_hero_contenido{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  
+    
+}
+
+.proyecto_hero_link{
+  display: inline-block;
+  font-size: 20px;
+  color: white;
+  background-color: #c7d243;
+  margin-top: 20px;
+  padding: 8px 45px;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.proyecto_hero_link:hover{
+background-color: #81882c;
+}
+
+
+
+/* Estilos Reseñas*/
+
+.resenias {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin: 20px 0;
+  padding: 20px;
+
+}
+
+.resenias_titulo{
+  margin-top: 60px;
+  text-align: center;
+}
+
+
+
+
+/*Estilos para Productos*/
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 70px;
+  padding: 20px;
+  
+}
+
+
+.productos_card_foto img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.productos_card_boton{
+  display: inline-block;
+  font-size: 20px;
+  color: white;
+  background-color: #c7d243;
+  margin-top: 20px;
+  padding: 5px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.productos_card_boton:hover{
+  background-color: #81882c;
+}
+
+.productos_titulo{
+  margin-top: 60px;
+  text-align: center;
+}
+
+
+
+/*Estilos Formulario Contacto*/
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  
+}
+
+.formulario_texto h2{
+  margin: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 36px;
+  
+}
+
+.formulario_info{
+  margin: 30px 0;
+}
+
+.formulario_info form label{
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.formulario_info form input{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.boton_enviar{
+  display: inline-block;
+  font-size: 20px;
+  color: white;
+  background-color: #c7d243;
+  margin-top: 20px;
+  padding: 10px 60px;
+  border-radius: 50px;
+  text-decoration: none;
+  border-style: none;
+
+}
+
+.boton_enviar:hover{
+  background-color: #81882c;
+}
+
+
+/*Estilos Footer*/
 
 .navbar__footer{
   display: flex;
@@ -75,114 +262,13 @@ header {
 
 .navbar__footer__menu{
   list-style: none;
-  font-size: 0.75rem;
+  font-size: 14px;
 }
 
 .footer__copy{
   text-align: center;
-  font-size: 0.70rem;
-  margin-top: 0.25rem;
-}
-
-
-
-
-
-
-/*.menu {
-    margin: auto;
-    width: 80%;
-    height: 120px;
-    background-color: blueviolet;
-       
-
-}*/
-
-/*.menu nav{
-  display: inline;
-}*/
-
-/*.menu img {
-  width: 25%;
-  align-items: center;
-}*/
-
-.productos {
-  margin: auto;
-  width: 80%;
-}
-
-.somos {
-  margin: auto;
-  width: 80%;
-}
-
-.formulario {
-  margin: auto;
-  width: 80%;
-}
-
-body {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  background-color: rgb(255, 255, 255);
-}
-
-h1 {
-  font-size: 1rem;
-}
-
-h2 {
-  font-size: 0.5rem;
-}
-
-p {
-  font-size: 0.75rem;
-}
-
-/*nav{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-nav a img {
-  display: inline
-  width: 80%;
-  align-items: center;
-}
-
-nav ul {
-  text-align:right;
-  list-style: none;
-}
-
-nav ul li {
-  display: inline;
-  margin: 0 15px;
-  font-size: 0.75rem;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: black;
-}
-*/
-table {
-  width: 80%;
-  background-color: blanchedalmond;
-  border-radius: 10px;
-}
-
-th,td {
-  text-align: left;
-}
-
-footer {
-  margin: auto;
-  height: fit-content;
-  background-color: rgb(99, 98, 98);
-  color: antiquewhite;
-  
+  font-size: 12px;
+  margin-bottom:  10px;
 }
 
 .navbar__footer{
@@ -197,18 +283,6 @@ footer {
 
 
 /* TIPOGRAFÍAS */
-
-.poppins-thin {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.poppins-extralight {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-}
 
 .poppins-light {
   font-family: "Poppins", sans-serif;
@@ -240,68 +314,50 @@ footer {
   font-style: normal;
 }
 
-.poppins-extrabold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-}
-
 .poppins-black {
   font-family: "Poppins", sans-serif;
   font-weight: 900;
   font-style: normal;
 }
 
-.poppins-thin-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: italic;
+
+
+@media (max-width: 576px) {
+  .navbar__menu{
+    display: none;
+  }
+
+  .navbar {
+    display:block;
+  }
+
+  .productos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+    padding: 20px;
+  }
+
+  .resenias {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+    padding: 20px;
+  }
+ 
 }
 
-.poppins-extralight-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: italic;
-}
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: center;
+    
+  }
 
-.poppins-light-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
+  .resenias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    padding: 20px;
+   }
 
-.poppins-regular-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.poppins-medium-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.poppins-semibold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.poppins-bold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.poppins-extrabold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: italic;
-}
-
-.poppins-black-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: italic;
 }
