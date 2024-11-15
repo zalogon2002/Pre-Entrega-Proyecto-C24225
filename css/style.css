@@ -108,7 +108,7 @@ p {
 /*Estilos Index*/
 
 .proyecto{
-  background-image: url(/img/cuantos_dias_por_semana_debo_correr.png);
+  background-image: url(../img/cuantos_dias_por_semana_debo_correr.png);
   padding: 120px 0;
   background-size: cover;
 }
