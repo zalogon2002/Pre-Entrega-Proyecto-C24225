@@ -27,7 +27,31 @@
            
     </header>
     <main>
-        <h2 class="poppins-black">ESTE ES TU CARRITO</h2>
+        <div class="pagina_carrito container">
+            <h2 class="poppins-black">ESTE ES TU CARRITO</h2>
+            <table class="tabla_carrito">
+                <thead class="tabla_carrito_cabezal">
+                    <tr>
+                        <th class="poppins-regular">Producto</th>
+                        <th class="poppins-regular">Precio</th>
+                        <th class="poppins-regular">Cantidad</th>
+                        <th class="poppins-regular">Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody id="carrito_productos">
+                    <!-- Aquí se cargarán los productos del carrito -->
+                </tbody>            
+            </table>
+            <div class="text-end mb-3">
+                <h4>Total: $<span id="total_carrito">0</span></h4>
+            </div>
+    
+            <div class="d-flex justify-content-between">
+                <button id="limpiar_carrito" class="btn btn-danger">Volver al Inicio</button>
+                <button id="finalizar_compra" class="btn btn-success">Finalizar Compra</button>
+            </div>
+
+        </div>
     </main>
     <footer class="footer">
         <nav class="navbar__footer container">
@@ -48,5 +72,7 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/14f85755d9.js" crossorigin="anonymous"></script>
+    <script src="js/script3.js"></script>
+    <script src="js/carrito.js"></script>
 </body>
 </html>

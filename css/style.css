@@ -169,7 +169,6 @@ background-color: #81882c;
   
 }
 
-
 .productos_card_foto img{
   width: 100%;
   object-fit: cover;
@@ -194,6 +193,23 @@ background-color: #81882c;
   margin-top: 60px;
   text-align: center;
 }
+
+
+/*Estilos Carrito*/
+
+.tabla_carrito {
+  margin-top: 20px;
+  border-collapse:collapse;
+  width: 100%;
+  background-color: #9e9d9d;
+}
+
+.tabla_carrito th, .tabla_carrito td {
+  /*padding: 12px 15px;*/
+  border: 1px solid #000000;
+  text-align: center;
+}
+
 
 
 
